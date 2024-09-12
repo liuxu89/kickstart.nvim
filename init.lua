@@ -98,6 +98,7 @@ vim.g.have_nerd_font = false
 -- NOTE: You can change these options as you wish!
 --  For more options, you can see `:help option-list`
 
+vim.opt.guicursor = ''
 -- Make line numbers default
 vim.opt.number = true
 -- You can also add relative line numbers, to help with jumping.
@@ -839,6 +840,17 @@ require('lazy').setup({
 
       -- You can configure highlights by doing something like:
       vim.cmd.hi 'Comment gui=none'
+      vim.cmd.highlight({ "Normal", "guibg=NONE" })
+      vim.cmd.highlight({ "Normal", "ctermbg=NONE" })
+      vim.cmd.highlight({ "LineNr", "guibg=NONE" })
+      vim.cmd.highlight({ "LineNr", "ctermbg=NONE" })
+      vim.cmd.highlight({ "SignColumn", "ctermbg=NONE" })
+      vim.cmd.highlight({ "SignColumn", "guibg=NONE" })
+
+      vim.cmd.highlight({ "CursorLineNr", "guibg=green" })
+      vim.cmd.highlight({ "CursorLineNr", "ctermbg=green" })
+      vim.cmd.highlight({ "CursorLine", "guibg=NONE" })
+      vim.cmd.highlight({ "CursorLine", "ctermbg=NONE" })
     end,
   },
 

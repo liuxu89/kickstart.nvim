@@ -99,6 +99,10 @@ vim.g.have_nerd_font = false
 --  For more options, you can see `:help option-list`
 
 vim.opt.guicursor = ''
+-- 
+vim.cmd([[
+  autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+]])
 -- Make line numbers default
 vim.o.number = true
 -- You can also add relative line numbers, to help with jumping.

@@ -906,7 +906,8 @@ require('lazy').setup({
       vim.cmd.highlight({ "SignColumn", "ctermbg=NONE" })
       vim.cmd.highlight({ "SignColumn", "guibg=NONE" })
       
-      vim.cmd.highlight({ "CursorLineNr", "guibg=green" })
+      vim.cmd.highlight({ "CursorLineNr", "guibg=#D35400" })
+      vim.cmd.highlight({ "CursorLineNr", "guifg=white" })
       vim.cmd.highlight({ "CursorLineNr", "ctermbg=green" })
       vim.cmd.highlight({ "CursorLine", "guibg=NONE" })
       vim.cmd.highlight({ "CursorLine", "ctermbg=NONE" })
